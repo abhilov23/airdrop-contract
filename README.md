@@ -52,3 +52,51 @@ To deploy the contracts, run:
 make deploy ARGS="--network sepolia"
 ```
 
+## 📦 Deployment Details
+
+- **Block Number:** `8455030`
+- **Total Gas Paid:** `0.000002334085696872 ETH`  
+  (`2,333,976` gas at ~`0.001000047 gwei`)
+
+---
+
+### 🔗 Transaction Hashes
+
+- **BagelToken Deployment:**  
+  [`0xfab0475bb5d759672f4b9158dddb1415b35d3c4f991c796a296736fa5cb970da`](https://sepolia.etherscan.io/tx/0xfab0475bb5d759672f4b9158dddb1415b35d3c4f991c796a296736fa5cb970da)
+
+- **MerkleAirdrop Deployment:**  
+  [`0xf771190757d9249ba26e3a7ede3f613c1a581568f9addfa2d78da6e0a66c4d80`](https://sepolia.etherscan.io/tx/0xf771190757d9249ba26e3a7ede3f613c1a581568f9addfa2d78da6e0a66c4d80)
+
+- **Mint Transaction:**  
+  [`0xebbfc84ce498a549ad1f914a67158d10670b77117819e3baf828e9b4147ec537`](https://sepolia.etherscan.io/tx/0xebbfc84ce498a549ad1f914a67158d10670b77117819e3baf828e9b4147ec537)
+
+- **Transfer Transaction:**  
+  [`0xf771190757d9249ba26e3a7ede3f613c1a581568f9addfa2d78da6e0a66c4d80`](https://sepolia.etherscan.io/tx/0xf771190757d9249ba26e3a7ede3f613c1a581568f9addfa2d78da6e0a66c4d80)
+
+---
+
+### ⚙️ Deployment Steps
+
+1. Deploy `BagelToken` contract  
+2. Deploy `MerkleAirdrop` contract with Merkle root and token address  
+3. Mint `100,000` tokens to the deployer  
+4. Transfer tokens to the `MerkleAirdrop` contract
+
+---
+
+## ✅ Verification Status
+
+### 🔘 MerkleAirdrop
+
+- **Status:** Verified on Etherscan  
+- **URL:** [0x32e925ca0b161ef0cf2a5227fda1623f2e160a15](https://sepolia.etherscan.io/address/0x32e925ca0b161ef0cf2a5227fda1623f2e160a15)  
+- **Compiler Version:** `0.8.28`
+
+### 🔴 BagelToken
+
+- **Status:** Verification Failed  
+- **Reason:** Possibly due to source code or compiler version mismatch.  
+  Ensure deployed bytecode matches the source code for successful verification.
+
+
