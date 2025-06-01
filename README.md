@@ -50,7 +50,7 @@ The contracts are deployed on the **Sepolia test network** (Chain ID: 11155111) 
 To deploy the contracts, run:
 ```bash
 make deploy ARGS="--network sepolia"
-
+```
 
 
 # Merkle Airdrop Contract
